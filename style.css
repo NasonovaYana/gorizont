@@ -1,0 +1,406 @@
+/*навигационная панель бут*/
+body{
+     left:0px;
+    top: 0px;
+    background-color: black;
+    margin: 0; padding: 0; 
+    font-family: montserrat;
+}
+
+#logotext{
+    padding-top: 8px;
+    font-weight: 100px;
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+    color: #dedede;
+    padding-right: 3%;
+}
+.navbar {
+    height: 90px;
+    padding-left: 3%;
+    background-color: black;
+    font-family: montserrat;
+    font-size: 12px;
+  overflow: hidden;
+}
+
+#logo{
+    float: left;
+    padding-right: 3%;
+}
+.dropdown .dropbtn::after {
+    content: none;
+}
+.navbar a {
+  float: none;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+     background-color: transparent;
+float: left;
+  overflow: hidden;
+ padding-left: 120px;
+}
+
+/*это сама иконка*/
+.dropdown .dropbtn {
+    padding-top: 15px;
+    background-color: transparent;
+  font-size: 16px;  
+    font-weight: 200;
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 14px;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+     background-color: transparent;
+}
+
+/*выпадашка*/
+.dropdown-content {
+     background-color: transparent;
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+     background-color: transparent;
+  float: right;
+  color: #dedede;
+  padding: 12px 2px;
+    padding-bottom: 5px;
+  text-decoration: none;
+    text-align: center;
+  display: inline;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    border-bottom: 1px solid #e5e3e3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Видео фон*/
+video{
+    max-width: 100%; height: auto;
+    margin: 0 auto;
+   position: fixed;
+    display: block;
+   z-index:-1;
+   left:0px;
+    opacity: 30%;
+}
+/*форма входа-связи*/
+#login-form {
+    padding-top: 70px;
+	margin: 150px auto;
+	width: 300px;
+}
+
+#login-form h1 {
+	background-color: #282830;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#login-form fieldset {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 17px;
+	position: relative;
+}
+
+#login-form fieldset:before {
+	background-color: #fff;
+	content: "";
+	height: 8px;
+	left: 50%;
+	margin: -4px 0 0 -4px;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 8px;
+}
+
+#login-form input {
+	font-size: 14px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="text"] {
+    border: 1px solid transparent; 
+	border-bottom: 1px solid #dcdcdc;
+	padding: 12px 10px;
+	width: 238px;
+}
+
+#login-form input[type="email"] {
+	border-radius: 3px 3px 0 0;
+}
+
+#login-form input[type="text"] {
+	border-radius: 0px 0px 3px 3px;
+}
+
+#login-form input[type="submit"] {
+	background: #282830;
+	border-radius: 3px;
+	color: #fff;
+	float: right;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 12px 20px;
+}
+
+#login-form input[type="submit"]:hover { background: #282830; }
+
+#login-form footer {
+	font-size: 12px;
+	margin-top: 16px;
+}
+
+.info {
+	background: #e5e5e5;
+	border-radius: 50%;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 10px 0 0;
+	text-align: center;
+	width: 20px;
+}
+
+.soon{
+    padding-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.lable{
+    position: flex;
+    text-align: center;
+    border: solid 1px red;
+    padding: 5px 5px;
+    color: white;
+    background: red;
+    width: 250px;
+}
+/*АКТЁРЫ*/
+.congrats {
+    padding-top: 70px;
+    font-family: montserrat;
+    text-align: center;
+    color:white;
+    padding-bottom: 70px;
+}
+.congrats h1{
+     font-weight: 300;
+    font-family: montserrat;
+    font-size: 20px;
+}
+
+.congrats h2{
+    font-family: montserrat;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.congrats p{
+    font-size: 15px;
+    font-family: montserrat;
+}
+.container{
+    padding-top: 250px;
+}
+.videoa{
+    padding-top: 170px;
+    display: flex;
+    text-align: center;
+    left: 20%;
+    top: 20%;
+    z-index: 1;
+}
+
+/*КОНТАКТЫ*/
+
+.containerc {
+    padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+    color: #dedede;
+    font-family: montserrat;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+.containerc a{
+    color: #dedede;
+    text-decoration: none;
+}
+.containerc a:hover{
+    color: white;
+}
+.item {
+    width: 400px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.item-wide { width: 500px;}
+.item-superwide { 
+    width: 900px;
+padding-top: 70px;
+font-size: 14px;}
+
+.break-column {
+  flex-basis: 100%;
+  width: 0;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+#logotextc{
+    padding-top: 8px;
+    font-weight: 100px;
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+    color: black;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+
+/*Футер*/
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+.name{
+    float: right;
+    display: inline-block;
+}
+.nets{
+    float: right;
+    display: inline-block;
+}
+
+/*Галерея*/
+.gallery {
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    padding-bottom: 100px;
+}
+.gallery a {
+    display: inline-block;
+    height: 135px;
+    position: relative;
+    width: 180px;
+
+    /* Отмена выделения */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.gallery a img {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* изменение рамки */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* правила анимации */
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+
+}
+
+.gallery a:focus img {
+    cursor: default;
+    height: 250%;
+    left: -150px;
+    top: -100px;
+    position: absolute;
+    width: 250%;
+    z-index: 25;
+
+
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.title_foto{
+    color: white;
+    font-family: montserrat;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.link_photo{
+    font-size: 20px;
+    padding-top: 15px;
+    color: #dedede;
+    position: inline;
+    line-height: 30px;
+}
+
+.link_photo a{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+}

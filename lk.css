@@ -1,0 +1,96 @@
+body{
+    left:0px;
+    top: 0px;
+    background-color: black;
+    margin: 0; padding: 0;
+    font-family: montserrat;
+}
+.choose_rp{
+    text-align: center;
+    width: 120px;
+    color: white;
+    font-weight: 100;
+    padding: 15px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background-color: #666161;
+    margin-right: 100px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.choose_rp:hover{
+    background-color: #4f4c4c;
+    border: 1px solid #4f4c4c;
+}
+.lk_h1{
+    color: #dedede;
+    font-size: 25px;
+    font-weight: 200;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#cr_ev{
+    margin-left: 50px;
+}
+/*Выпадающая форма создания*/
+
+.create_form{
+    display: none;
+    margin-left: 50px;
+}
+
+.create_form,fb_form input{
+    color: #4f4b4b;
+    width: 100px;
+    height: 25px;
+}
+.create_form,fb_form select{
+    color: #4f4b4b;
+    width: 100px;
+    height: 25px;
+}
+.fb_form{
+    margin-left: 30px;
+}
+#formbt{
+    color: #dedede;
+    background-color: #282830;
+    border-radius: 5px;
+    height: 25px;
+}
+.feedbackevbt{
+    color: #dedede;
+    background-color: #282830;
+    border-radius: 5px;
+    height: 25px;
+}
+#formbt1{
+    color: #dedede;
+    background-color: #282830;
+    border-radius: 5px;
+    height: 25px;
+}
+.rp_rh select{
+    width: 100px;
+    margin-right: 100px;
+}
+.rp_rh{
+    margin-top: 100px;
+    display: none;
+    margin-left: 30px;
+}
+
+#arprh1, #arprh2 {
+    color: #dedede;
+    font-size: 15px;
+
+}
+
+.rpinfo{
+    color: #dedede;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 30px;
+    margin-top: 20px;
+}

@@ -1,0 +1,84 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+<div class="main">
+<div class="navbar-header">
+<div class="navbar">
+    <a href="index.html"><img src="logotype.png" id='logo' width="13.5%"></a>
+    <p id='logotext'>САМАЯ ВЫСОКАЯ ТОЧКА<br>НАД УРОВНЕМ МОРЯ!</p>
+     <div class="dropdown">
+         <button class="dropbtn"><a href="photo.html"><img src='actor.svg' width="20px" id='actor'> </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="actor.html">АКТЁРЫ</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"> <a href="photo.html"> <img src='camera.svg' width="20px" id='camera'></a>
+    </button>
+    <div class="dropdown-content">
+      <a href="photo.html">ФОТОГАЛЕРЕЯ</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn"><a href="cont.html"><img src='call.svg' width="20px" id='call'> </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="cont.html">КОНТАКТЫ</a>
+    </div>
+  </div>
+    <div class="dropdown">
+        <button class="dropbtn"><a href="login.html"><img src='smile.svg' width="20px" id='smile'> </a>
+        </button>
+        <div class="dropdown-content">
+            <a href="login.html">ЛИЧНЫЙ КАБИНЕТ</a>
+        </div>
+    </div>
+</div>
+</div>
+
+	<video autoplay loop muted >
+       <source src="video/video2.mp4" type="video/mp4" class="vid">
+     <!--  <source src="video/video1.webm" type="video/webm" class="vid"> -->
+      <!--  <source src="video/video3.ogv" type="video/ogg"/ class="vid"> -->
+    </video>
+    <!--Инфокоробка-->
+<div class='soon'>
+    <img src='images/6.jpg' width='50%'>
+    <p>Рок-мюзикл "Вернувшийся", тут вся информация про него.</p>
+    
+    </div>
+    <!--Связь-->
+<div id="login-form">
+        <h1>Задайте ваш вопрос</h1>
+
+        <fieldset>
+            <form action="mail.php" method="POST">
+                <input type="text" name='user_name' required value="Ваше имя" onBlur="if(this.value=='')this.value='Ваше имя'" onFocus="if(this.value=='Ваше имя')this.value='' ">
+                <input type="email" name='email' required value="Электронная почта" onBlur="if(this.value=='')this.value='Электронная почта'" onFocus="if(this.value=='Электронная почта')this.value='' ">
+                <input type="text" name = 'mes' required value="Ваш вопрос" onBlur="if(this.value=='')this.value='Ваш вопрос'" onFocus="if(this.value=='Ваш вопрос')this.value='' ">
+                <input type="submit" value="ОТПРАВИТЬ">
+            </form>
+        </fieldset>
+</div>
+    </div>
+<div class="footer">
+    <div class='name'>(c) Gorizont Entertainment, 2020</div>
+    <div class="nets">
+    <div class="ins">
+        <img src="instagram.svg" width='15px'>
+        <span>gorizont_entertainment</span><br>
+        <img src='vk.svg' width='20px'>
+        <span>https://vk.com/gorizont_entertainment</span>
+        </div>
+    </div>
+    <div class='contfoot'>
+    
+    </div>
+    </div>
+</body>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отчёты</title>
+    <link href="lk.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+<!--Навигация-->
+<div class="navbar-header">
+    <div class="navbar">
+        <img src="logotype.png" id='logo' width="13.5%">
+        <p id='logotext'>ЛИЧНЫЙ КАБИНЕТ<br>АДМИНА</p>
+        <div class="dropdown">
+            <button class="dropbtn"><a href=index_adm.html"><img src='timetable.svg' width="20px" id='actor'> </a>
+            </button>
+            <div class="dropdown-content">
+                <a href="index_adm.php">РАСПИСАНИЕ</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="report.html"> <img src='report.svg' width="20px" id='camera'></a>
+            </button>
+            <div class="dropdown-content">
+                <a href="report.html">ОТЧЁТЫ</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="events.php"><img src='events.svg' width="20px" id='call'> </a>
+            </button>
+            <div class="dropdown-content">
+                <a href="events.php">МЕРОПРИЯТИЯ</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Выбор отчётов-->
+<div class="choose_rp" onclick="rp_rh()">
+    <p>Отчёты по репетициям</p>
+</div>
+<a onclick="rp_ev()"><div class="choose_rp">
+    <p>Отчёты по мероприятиям</p>
+</div></a>
+<script>
+    function rp_ev() {
+        document.getElementById('res_rpev').style.display='inline-block'
+    }
+</script>
+<div class="rp_rh" id="res_rprh">
+    <form method="POST"  action="reportrh.php">
+    <input type="text" name='actorrhrp' placeholder="Имя актёра">
+    <input type="submit" id="formbt" value="Вывести отчёт">
+    </form>
+
+</div>
+<script>
+    function rp_rh() {
+        document.getElementById('res_rprh').style.display='block'
+    }
+</script>
+<div class="rp_rh" id="res_rpev">
+    <input type="text" name='actorevrp' placeholder="Имя актёра">
+    <input type="submit" id="arprh2" value="Вывести отчёт">
+</div>
+
+</body>
+</html>
